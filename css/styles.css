@@ -69,6 +69,14 @@ ul {
   background-color: var(--white-color) !important;
   color: var(--main-color) !important;
 }
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 24px;
+  }
+  .section-desc {
+    font-size: 16px;
+  }
+}
 @media (max-width: 768px) {
   .section-title {
     font-size: 32px;
@@ -224,6 +232,18 @@ ul {
   }
   .hero-section .hero-desc {
     font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .hero-section .hero-title {
+    font-size: 38px;
+  }
+  .hero-section .hero-desc {
+    font-size: 18px;
+  }
+  .hero-section .phone {
+    flex: 1 1 200px;
+    max-width: 250px;
   }
 }
 /*  End Home Section */
