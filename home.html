@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albaraka</title>
+  <link rel="icon" type="image/svg" href="./images/logo.svg">
+  <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <!--Start Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="navbar-container w-100 d-flex justify-content-between align-items-center">
+        <div class="w-100 d-flex justify-content-between align-items-center">
+          <a id="navbar-brand" class="navbar-brand" href="#">
+            <img src="./images/logo.svg" alt="Logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-top flex-column flex-md-row justify-content-between align-items-center"
+            id="offcanvasNavbar">
+            <button class="btn-close d-lg-none ms-auto me-3" type="button" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+            <ul class="navbar-nav mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#main">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#effect">عن الجمعية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">المبادرات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#story">كيف تتبرع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#privacy">الأخبار</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">تواصل معنا</a>
+              </li>
+            </ul>
+            <div class="d-flex gap-3">
+              <div class="dropdown">
+                <div class="dropdown-toggle d-flex align-items-center gap-3" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="./images/language.svg" alt="">
+                  <span>العربية</span>
+                </div>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">العربية</a></li>
+                  <li><a class="dropdown-item" href="index-en.html">الانجلزية</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-main px-5" href="#!">تبرع</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Start Home Section -->
+  <header class="home-section">
+    <div class="container wow animate__animated animate__fadeInUp">
+      <div class="home-content d-flex flex-column flex-md-row align-items-baseline gap-5">
+        <div class="w-100">
+          <h2><span>البركة</span> لنصنع أثرًا مستدامًا في حياة الأيتام والمحتاجين </h2>
+        </div>
+        <div class="w-100 text-end">
+          <p class="mb-5">جمعية خيرية مرخّصة تهدف إلى تقديم الدعم المستدام للمحتاجين بشفافية وموثوقية.</p>
+          <a class="btn btn-main px-5" href="#!">تبرع</a>
+        </div>
+      </div>
+      <div class="home-img w-100"><img class="img-fluid" src="./images/hero.png" alt=""></div>
+    </div>
+  </header>
+  <!-- End Home Section -->
+
+  <!-- Start Counter -->
+  <section class="counter-one">
+    <div class="container">
+      <div class="row">
+        <!-- Image Column -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="counter-one_count-inner mb-5">
+            <div class="counter-one_counter">
+              <span class="odometer odometer-auto-theme" data-count="120">
+                <div class="odometer-inside"><span class="odometer-digit"><span
+                      class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span
+                        class="odometer-ribbon"><span class="odometer-ribbon-inner"><span
+                            class="odometer-value">3</span></span></span></span></span><span
+                    class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                      class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                          class="odometer-ribbon-inner"><span
+                            class="odometer-value">5</span></span></span></span></span><span
+                    class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                      class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                          class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span><span
+                    class="odometer-formatting-mark">,</span><span class="odometer-digit"><span
+                      class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span
+                        class="odometer-ribbon"><span class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span><span
+                    class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                      class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                          class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span><span
+                    class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                      class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                          class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span>
+                </div>
+              </span>
+              <span class="plus">+</span>
+            </div>
+            <div class="counter-one_text">مكتب في الجزائر والخارج</div>
+          </div>
+        </div>
+
+        <!-- Image Column -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="counter-one_count-inner mb-5">
+            <div class="counter-one_counter">K
+              <span class="odometer odometer-auto-theme" data-count="3.8">
+                <div class="odometer-inside"><span class="odometer-digit"><span
+                      class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span
+                        class="odometer-ribbon"><span class="odometer-ribbon-inner"><span
+                            class="odometer-value">3</span></span></span></span></span><span
+                    class="odometer-formatting-mark">,</span><span class="odometer-digit"><span
+                      class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span
+                        class="odometer-ribbon"><span class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span><span
+                    class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                      class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                          class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span><span
+                    class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                      class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                          class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span>
+                </div>
+              </span>
+              <span class="plus">+</span>
+            </div>
+            <div class="counter-one_text">عضو متطوع</div>
+          </div>
+        </div>
+
+        <!-- Image Column -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="counter-one_count-inner mb-5">
+            <div class="counter-one_counter">K
+              <span class="odometer odometer-auto-theme" data-count="200">
+                <div class="odometer-inside"><span class="odometer-digit"><span
+                      class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span
+                        class="odometer-ribbon"><span class="odometer-ribbon-inner"><span
+                            class="odometer-value">5</span></span></span></span></span><span
+                    class="odometer-formatting-mark">,</span><span class="odometer-digit"><span
+                      class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span
+                        class="odometer-ribbon"><span class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span><span
+                    class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                      class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                          class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span><span
+                    class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                      class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                          class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span>
+                </div>
+              </span>
+              <span class="plus">+</span>
+            </div>
+            <div class="counter-one_text">مستفيد</div>
+          </div>
+        </div>
+
+        <!-- Image Column -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="counter-one_count-inner mb-5">
+            <div class="counter-one_counter">K
+              <span class="odometer odometer-auto-theme" data-count="8">
+                <div class="odometer-inside"><span class="odometer-digit"><span
+                      class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span
+                        class="odometer-ribbon"><span class="odometer-ribbon-inner"><span
+                            class="odometer-value">1</span></span></span></span></span><span
+                    class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                      class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                          class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span><span
+                    class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                      class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                          class="odometer-ribbon-inner"><span
+                            class="odometer-value">0</span></span></span></span></span>
+                </div>
+              </span>
+              <span class="plus">+</span>
+            </div>
+            <div class="counter-one_text">مشروع منفذ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Counter -->
+
+  <!-- Start Domains -->
+  <section class="domains section-spacing">
+    <div class="container wow animate__animated animate__fadeInUp">
+      <div class="swiper swiper-domains">
+        <div class="domains-heading">
+          <h2 class="section-title">المجالات التي تغطيها الجمعية</h2>
+          <div class="swiper-buttons flex-shrink-0">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/domain-01.png" loading="lazy">
+            <div class="domain-item-details">
+              <h4>التبرع للمساجد</h4>
+              <a href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+            </div>
+            <div class="domain-item-overlay">
+              <h4>التبرع للمساجد</h4>
+              <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/domain-02.png" loading="lazy">
+            <div class="domain-item-details">
+              <h4>المجال التعليمي</h4>
+              <a href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+            </div>
+            <div class="domain-item-overlay">
+              <h4>المجال التعليمي</h4>
+              <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/domain-03.png" loading="lazy">
+            <div class="domain-item-details">
+              <h4>المجال الإغاثي</h4>
+              <a href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+            </div>
+            <div class="domain-item-overlay">
+              <h4>المجال الإغاثي</h4>
+              <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/domain-04.png" loading="lazy">
+            <div class="domain-item-details">
+              <h4>المجال الصحي</h4>
+              <a href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+            </div>
+            <div class="domain-item-overlay">
+              <h4>المجال الصحي</h4>
+              <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/domain-01.png" loading="lazy">
+            <div class="domain-item-details">
+              <h4>التبرع للمساجد</h4>
+              <a href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+            </div>
+            <div class="domain-item-overlay">
+              <h4>التبرع للمساجد</h4>
+              <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Domains -->
+
+  <!-- Start Inspiration Section -->
+  <section class="inspiration section-spacing">
+    <div class="inspiration-cover">
+      <div class="container h-100 wow animate__animated animate__fadeInLeft">
+        <div class="h-100 d-flex justify-content-end align-items-center">
+          <div class="box-quotes">
+            <div class="swiper swiper-inspiration h-100">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <p>“كلُّ امرِئٍ في ظِلِّ صدقتِهِ حتى يُفصَلَ بين الناسِ “</p>
+                  <p>“إنَّ الصَّدَقَةَ لتُطفِئُ غَضَبَ الربِّ وتَدفعُ مِيتَةَ السُّوءِ “</p>
+                  <p>“اتَّقُوا النارَ ولو بِشِقِّ تَمْرَةٍ، فإنْ لم تَجِدُوا فَبِكَلِمَةٍ طَيِّبَةٍ “</p>
+                </div>
+                <div class="swiper-slide">
+                  <p>“كلُّ امرِئٍ في ظِلِّ صدقتِهِ حتى يُفصَلَ بين الناسِ “</p>
+                  <p>“إنَّ الصَّدَقَةَ لتُطفِئُ غَضَبَ الربِّ وتَدفعُ مِيتَةَ السُّوءِ “</p>
+                  <p>“اتَّقُوا النارَ ولو بِشِقِّ تَمْرَةٍ، فإنْ لم تَجِدُوا فَبِكَلِمَةٍ طَيِّبَةٍ “</p>
+                </div>
+              </div>
+              <div class="swiper-buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Inspiration Section -->
+
+  <!-- Start Campaigns Section -->
+  <section class="campaigns section-spacing">
+    <div class="campaigns-cover">
+      <div class="container wow animate__animated animate__fadeInUp">
+        <div class="d-flex flex-column flex-md-row gap-5">
+          <div class="campaigns-img">
+            <img src="./images/campaigns.jpg" alt="">
+          </div>
+          <div class="campaigns-content">
+            <h2 class="section-title">حملات الجمعية</h2>
+            <div class="campaigns-list">
+              <div class="campaigns-item">
+                <img src="./images/campaigns-icon.svg" alt="">
+                <div>
+                  <h4>حملة إطعام رمضان</h4>
+                  <p>نسعى لتوزيع وجبات إفطار على العائلات المستحقة في غزة خلال شهر رمضان.</p>
+                </div>
+                <a class="" href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+              </div>
+              <div class="campaigns-item">
+                <img src="./images/campaigns-icon.svg" alt="">
+                <div>
+                  <h4>اسم الحملة</h4>
+                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة ..</p>
+                </div>
+                <a class="" href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+              </div>
+              <div class="campaigns-item">
+                <img src="./images/campaigns-icon.svg" alt="">
+                <div>
+                  <h4>حملة كسوة الشتاء</h4>
+                  <p>دعم مستمر للأيتام لتوفير تعليمهم، غذائهم ورعايتهم الصحية</p>
+                </div>
+                <a class="" href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+              </div>
+              <div class="campaigns-item">
+                <img src="./images/campaigns-icon.svg" alt="">
+                <div>
+                  <h4>اسم الحملة</h4>
+                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة ..</p>
+                </div>
+                <a class="" href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+              </div>
+              <div class="campaigns-item">
+                <img src="./images/campaigns-icon.svg" alt="">
+                <div>
+                  <h4>حملة كفالات الأيتام</h4>
+                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة ..</p>
+                </div>
+                <a class="" href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+              </div>
+              <div class="campaigns-item">
+                <img src="./images/campaigns-icon.svg" alt="">
+                <div>
+                  <h4>اسم الحملة</h4>
+                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة ..</p>
+                </div>
+                <a class="" href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+              </div>
+              <div class="campaigns-item">
+                <img src="./images/campaigns-icon.svg" alt="">
+                <div>
+                  <h4>حملة كفالات الأيتام</h4>
+                  <p>تقديم مساعدات عاجلة للأسر المتضررة من الأحداث الأخيرة في غزة.</p>
+                </div>
+                <a class="" href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+              </div>
+              <div class="campaigns-item">
+                <img src="./images/campaigns-icon.svg" alt="">
+                <div>
+                  <h4>اسم الحملة</h4>
+                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة ..</p>
+                </div>
+                <a class="" href="#!"><img src="./images/arrow-next.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Campaigns Section -->
+
+  <!-- Start Grant Section -->
+  <section class="grant section-spacing">
+    <div class="container wow animate__animated animate__fadeInUp">
+      <div class="d-flex flex-column flex-md-row gap-5 ">
+        <div class="grant-content w-50">
+          <h2 class="section-title">منحك ينقذ حياة العديد من الأشخاص</h2>
+          <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
+            تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج
+            إلى
+            عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد،</p>
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="d-flex flex-column gap-3">
+              <img src="./images/test-01.svg" alt="">
+              <span>سياسة التبرع</span>
+            </div>
+            <div class="d-flex flex-column gap-3">
+              <img src="./images/test-02.svg" alt="">
+              <span>سياسة التبرع</span>
+            </div>
+            <div class="d-flex flex-column gap-3">
+              <img src="./images/test-03.svg" alt="">
+              <span>سياسة التبرع</span>
+            </div>
+          </div>
+          <a class="btn btn-main px-5 mb-5 mb-md-0" href="#!">تبرع</a>
+        </div>
+        <div class="grant-images w-50">
+          <div class="img img-left">
+            <img class="img-fluid" src="./images/grant-left.png" alt="Fresh vegetables in a box">
+          </div>
+          <div class="img img-center">
+            <img src="./images/grant-01.png" alt="Man handing bread">
+          </div>
+          <img class="img img-right" src="./images/grant-right.png" alt="Boy serving food">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Grant Section -->
+
+  <!-- Start Ather Section -->
+  <section class="ather-section section-spacing">
+    <div class="container wow animate__animated animate__fadeInUp">
+      <div class="d-flex flex-column flex-md-row align-items-center gap-5 ">
+        <div class="ather-video w-50">
+          <a data-fancybox="video" href="./videos/video-01.mp4">
+            <img class="video-cover img-fluid" src="./images/ather-img.png" alt="Story Video" />
+            <img class="video-icon" src="./images/video-icon.svg" alt="">
+          </a>
+        </div>
+        <div class="ather-content w-50">
+          <h2 class="section-title">من أثر إحسانكم</h2>
+          <p>‏بعطائكم كنتم عوناً لعدة أٌسر متعففة محتاجة للدعم الغذائي ، ساهمتم في توفير العديد من الطرود الغذائية لأٌسر
+            منكوبة بسبب الحرب على غزة و كنتم لهم عوناً كبيراً لكم منا كل الحب و التقدير و الإحترام ، نرفق فيديو أثناء
+            توزيع هذه الطرود</p>
+          <div class="d-flex align-items-center gap-3">
+            <a class="btn btn-secondary" href="#!">+ 15.000 مستفيد من الحملة</a>
+            <a class="btn btn-secondary" href="#!">+ $10.000 اجمالي التبرعات</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Ather Section -->
+
+  <!-- Start Brands -->
+  <section class="brands section-spacing">
+    <div class="brands-cover">
+      <div class="brands-overlay"></div>
+      <div class="container wow animate__animated animate__fadeInUp">
+        <div class="swiper swiper-brands">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide text-center">
+              <img class="img-fluid" src="./images/brand-01.svg" loading="lazy">
+            </div>
+            <div class="swiper-slide text-center">
+              <img class="img-fluid" src="./images/brand-02.svg" loading="lazy">
+            </div>
+            <div class="swiper-slide text-center">
+              <img class="img-fluid" src="./images/brand-03.svg" loading="lazy">
+            </div>
+            <div class="swiper-slide text-center">
+              <img class="img-fluid" src="./images/brand-04.svg" loading="lazy">
+            </div>
+            <div class="swiper-slide text-center">
+              <img class="img-fluid" src="./images/brand-05.svg" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Brands -->
+
+  <!-- Start Footer -->
+  <footer>
+    <div class="footer-section">
+      <div class="container">
+        <div class="footer-heading d-flex flex-column flex-md-row gap-5">
+          <div class="w-50 d-flex align-items-center gap-3">
+            <img src="./images/footer-heading.svg" alt="">
+            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+              يمكنك..</p>
+          </div>
+          <div class="w-50">
+            <h4>كن على إطلاع دائم بحملاتنا</h4>
+            <div class="input-group">
+              <input type="email" class="form-control text-start" placeholder="أدخل البريد الإلكتروني الخاص بك هنا">
+              <button class="btn btn-main px-5 d-flex align-items-center justify-content-center" type="submit">
+                <img src="./images/send.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <img class="img-fluid mb-2" src="./images/footer-content.svg" alt="logo-dark">
+            <p>نسعى لإحداث فرق إيجابي في حياة المحتاجين من خلال مبادراتنا الإنسانية</p>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4>الأقسام الداخلية</h4>
+            <ul>
+              <li><a href="#!">عن الجمعية</a></li>
+              <li><a href="#!">المبادرات</a></li>
+              <li><a href="#!">كيف تتبرع</a></li>
+              <li><a href="#!">الأخبار</a></li>
+              <li><a href="#!">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4>الخصوصية و الأمان</h4>
+            <ul>
+              <li><a href="#!">سياسة الخصوصية</a></li>
+              <li><a href="#!">سياسة الأمان</a></li>
+              <li><a href="#!">الشروط و الأحكام</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4>تواصل معنا</h4>
+            <ul class="contanct-us">
+              <li>
+                <img src="./images/location.svg" alt="Location Icon">
+                <a href="#!" target="_blank">تعاونية الصومام 2 مكرر- لاكوت, بئر مراد رايس, الجزائر العاصمة, الجزائر.</a>
+              </li>
+              <li>
+                <img src="./images/calling.svg" alt="Location Icon">
+                <div>
+                  <a class="d-block mb-1" href="tel:+213797691031">+213-797-6910-31</a>
+                  <a class="d-block" href="tel:+905335721575">+905-335-721-575</a>
+                </div>
+              </li>
+              <li>
+                <img src="./images/message.svg" alt="Location Icon">
+                <a href="mailto:contact@elbarakah-dz.com">Contact@elbarakah-dz.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="m-0">جميع الحقوق محفوظة لجمعية البركة الدولية</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- End Footer Section -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/appear.js"></script>
+  <script src="./js/odometer.js"></script>
+  <script src="./js/jquery.fancybox.min.js"></script>
+  <script src="./js/wow.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
