@@ -144,6 +144,14 @@ ul {
   border-bottom: 0;
   border-right: 0.5em solid transparent;
 }
+.navbar .dropdown-item:hover {
+  color: var(--bs-dropdown-link-hover-color) !important;
+  background-color: var(--bs-dropdown-link-hover-bg) !important;
+}
+.navbar .dropdown-item:active {
+  background-color: var(--main-color) !important;
+  color: var(--white-color) !important;
+}
 .navbar .form-select:focus {
   box-shadow: none;
 }
@@ -172,7 +180,7 @@ ul {
   margin-bottom: 96px;
 }
 .home-section .home-content h2 {
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 120%;
 }
@@ -283,17 +291,11 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  background: #219653;
+  background: rgba(33, 150, 83, 0.9);
   padding: 0 20px;
-  transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-  -webkit-transform: scale(0, 1);
-  -ms-transform: scale(0, 1);
-  transform: scale(0, 1);
-  -webkit-transform-origin: right center;
-  -ms-transform-origin: right center;
-  transform-origin: right center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 .domains .domain-item-details h4,
 .domains .domain-item-overlay h4 {
@@ -306,12 +308,8 @@ ul {
   line-height: 25.6px;
 }
 .domains .swiper-slide:hover .domain-item-overlay {
-  -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  transform: scale(1, 1);
-  -webkit-transform-origin: right center;
-  -ms-transform-origin: right center;
-  transform-origin: right center;
+  opacity: 1;
+  visibility: visible;
 }
 /* End Domains Section */
 
@@ -321,13 +319,13 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 485px;
 }
 .inspiration .box-quotes {
   width: 50%;
-  height: 80%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  height: 329px;
+  margin-top: 78px;
+  margin-bottom: 78px;
   background-color: rgba(233, 245, 238, 0.64);
   backdrop-filter: blur(80px);
   padding: 32px;
@@ -382,32 +380,31 @@ ul {
 }
 .campaigns-cover {
   position: relative;
+  --before-height: 100%;
 }
 .campaigns-cover::before {
   content: "";
   position: absolute;
-  width: 30%;
-  height: 100%;
-  top: 50%;
+  width: var(--before-width);
+  height: var(--before-height);
+  top: var(--before-top);
   right: 0;
+  inset-inline-start: 0;
   background-color: var(--main-color);
-  transform: translateY(-50%);
   z-index: -1;
 }
 .campaigns-img {
-  position: absolute;
-  width: 20%;
-  height: 120%;
-  top: -10%;
+  position: relative;
+  width: 30%;
+  margin-bottom: 40px;
 }
 .campaigns-img img {
   max-width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 12px;
 }
 .campaigns-content {
   width: 70%;
-  margin-right: auto;
 }
 .campaigns-content .campaigns-list {
   display: flex;

@@ -73,3 +73,49 @@ if (document.querySelector(".swiper-brands")) {
     },
   });
 }
+
+// ============== Campaigns: Cover Overlay Resize ==============
+if (document.querySelector(".campaigns-cover")) {
+  const container = document.querySelector(".campaigns-cover");
+  const img = container.querySelector("img");
+  const firstCol = container.querySelector(".campaigns-img");
+
+  if (img && firstCol) {
+    const updateBeforeStyle = () => {
+      const imgRect = img.getBoundingClientRect();
+      const colRect = firstCol.getBoundingClientRect();
+      const direction = getComputedStyle(document.documentElement).direction;
+
+      const displayedHeight = imgRect.height;
+      const reducedHeight = displayedHeight * 0.8;
+      const containerTop = container.getBoundingClientRect().top;
+      const topOffset = imgRect.top - containerTop + imgRect.height * 0.1;
+
+      let beforeWidth;
+
+      if (direction === "rtl") {
+        const screenRight = window.innerWidth;
+        const colRight = colRect.right;
+        beforeWidth = screenRight - colRight + colRect.width;
+      } else {
+        beforeWidth = colRect.left + colRect.width;
+      }
+
+      container.style.setProperty("--before-height", `${reducedHeight}px`);
+      container.style.setProperty("--before-top", `${topOffset}px`);
+      container.style.setProperty("--before-width", `${beforeWidth}px`);
+    };
+
+    if (img.complete) {
+      updateBeforeStyle();
+    } else {
+      img.onload = updateBeforeStyle;
+    }
+
+    const resizeObserver = new ResizeObserver(updateBeforeStyle);
+    resizeObserver.observe(img);
+    resizeObserver.observe(firstCol);
+
+    window.addEventListener("resize", updateBeforeStyle);
+  }
+}
