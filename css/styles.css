@@ -380,18 +380,17 @@ ul {
 }
 .campaigns-cover {
   position: relative;
-  --before-height: 100%;
 }
 .campaigns-cover::before {
   content: "";
   position: absolute;
+  top: var(--before-top);
   width: var(--before-width);
   height: var(--before-height);
-  top: var(--before-top);
-  right: 0;
   inset-inline-start: 0;
   background-color: var(--main-color);
   z-index: -1;
+  transition: all 0.3s ease;
 }
 .campaigns-img {
   position: relative;
@@ -399,7 +398,7 @@ ul {
   margin-bottom: 40px;
 }
 .campaigns-img img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   border-radius: 12px;
 }
