@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albaraka</title>
+  <link rel="icon" type="image/svg" href="./images/logo.svg">
+  <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="../css/animate.min.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <!--Start Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="navbar-container w-100 d-flex justify-content-between align-items-center">
+        <div class="w-100 d-flex justify-content-between align-items-center">
+          <a id="navbar-brand" class="navbar-brand" href="#">
+            <img src="./images/logo.svg" alt="Logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-top flex-column flex-md-row justify-content-between align-items-center"
+            id="offcanvasNavbar">
+            <button class="btn-close d-lg-none ms-auto me-3" type="button" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+            <ul class="navbar-nav mb-3 mb-lg-0 gap-4">
+              <li class="nav-item">
+                <a class="nav-link" href="../home.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">عن الجمعية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./initiatives.html">المبادرات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./donate.html">كيف تتبرع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./news.html">الأخبار</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">تواصل معنا</a>
+              </li>
+            </ul>
+            <div class="d-flex gap-3">
+              <div class="dropdown">
+                <div class="dropdown-toggle d-flex align-items-center gap-3" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../images/language.svg" alt="">
+                  <span>العربية</span>
+                </div>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="home.html">العربية</a></li>
+                  <li><a class="dropdown-item" href="#!">الانجلزية</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-main px-5" href="#!">تبرع</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Start Hero -->
+  <section class="page-hero">
+    <div class="page-hero-cover">
+      <div class="container position-relative h-100 wow animate__animated animate__fadeInUp">
+        <div class="h-100 d-flex justify-content-center align-items-center">
+          <h1>مبادرات جمعية البركة الخيرية</h1>
+        </div>
+        <div class="social d-flex flex-column gap-2">
+          <a href="#!"><img src="../images/facebook-icon.svg" alt=""></a>
+          <a href="#!"><img src="../images/x-icon.svg" alt=""></a>
+          <a href="#!"><img src="../images/whatsapp-icon.svg" alt=""></a>
+          <a href="#!"><img src="../images/instagram-icon.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <!-- Start Latest Initiatives -->
+  <section class="initiatives domains section-spacing">
+    <div class="container wow animate__animated animate__fadeInUp">
+      <div class="swiper swiper-domains">
+        <div class="domains-heading">
+          <h2 class="section-title">المبادرات المضافة مؤخراً</h2>
+          <div class="swiper-buttons flex-shrink-0">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <!-- Swiper Slide Card -->
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+                <div class="card-domain">مشروع تعليمي</div>
+              </div>
+              <div class="card-body">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center gap-5 mb-3">
+                  <h5 class="card-title">اسم المبادرة</h5>
+                  <a href="#!"><img src="../images/share-icon.svg" alt=""></a>
+                </div>
+                <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+                  <a class="btn btn-secondary" href="#!">مبلغ التبرع | $</a>
+                  <a class="btn btn-main" href="#!">تبرع الآن</a>
+                </div>
+                <div class="amount d-flex justify-content-between align-items-center mb-3">
+                  <div>
+                    <span class="amount-name">تم جمع</span>
+                    <span class="amount-value">1000$</span>
+                  </div>
+                  <div>
+                    <span class="amount-name">المبلغ المتبقي</span>
+                    <span class="amount-value">1000$</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#!">عرض التفاصيل</a>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper Slide Card -->
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+                <div class="card-domain">مشروع تعليمي</div>
+              </div>
+              <div class="card-body">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center gap-5 mb-3">
+                  <h5 class="card-title">اسم المبادرة</h5>
+                  <a href="#!"><img src="../images/share-icon.svg" alt=""></a>
+                </div>
+                <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+                  <a class="btn btn-secondary" href="#!">مبلغ التبرع | $</a>
+                  <a class="btn btn-main" href="#!">تبرع الآن</a>
+                </div>
+                <div class="amount d-flex justify-content-between align-items-center mb-3">
+                  <div>
+                    <span class="amount-name">تم جمع</span>
+                    <span class="amount-value">1000$</span>
+                  </div>
+                  <div>
+                    <span class="amount-name">المبلغ المتبقي</span>
+                    <span class="amount-value">1000$</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#!">عرض التفاصيل</a>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper Slide Card -->
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+                <div class="card-domain">مشروع تعليمي</div>
+              </div>
+              <div class="card-body">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center gap-5 mb-3">
+                  <h5 class="card-title">اسم المبادرة</h5>
+                  <a href="#!"><img src="../images/share-icon.svg" alt=""></a>
+                </div>
+                <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+                  <a class="btn btn-secondary" href="#!">مبلغ التبرع | $</a>
+                  <a class="btn btn-main" href="#!">تبرع الآن</a>
+                </div>
+                <div class="amount d-flex justify-content-between align-items-center mb-3">
+                  <div>
+                    <span class="amount-name">تم جمع</span>
+                    <span class="amount-value">1000$</span>
+                  </div>
+                  <div>
+                    <span class="amount-name">المبلغ المتبقي</span>
+                    <span class="amount-value">1000$</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#!">عرض التفاصيل</a>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper Slide Card -->
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+                <div class="card-domain">مشروع تعليمي</div>
+              </div>
+              <div class="card-body">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center gap-5 mb-3">
+                  <h5 class="card-title">اسم المبادرة</h5>
+                  <a href="#!"><img src="../images/share-icon.svg" alt=""></a>
+                </div>
+                <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+                  <a class="btn btn-secondary" href="#!">مبلغ التبرع | $</a>
+                  <a class="btn btn-main" href="#!">تبرع الآن</a>
+                </div>
+                <div class="amount d-flex justify-content-between align-items-center mb-3">
+                  <div>
+                    <span class="amount-name">تم جمع</span>
+                    <span class="amount-value">1000$</span>
+                  </div>
+                  <div>
+                    <span class="amount-name">المبلغ المتبقي</span>
+                    <span class="amount-value">1000$</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#!">عرض التفاصيل</a>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper Slide Card -->
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+                <div class="card-domain">مشروع تعليمي</div>
+              </div>
+              <div class="card-body">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center gap-5 mb-3">
+                  <h5 class="card-title">اسم المبادرة</h5>
+                  <a href="#!"><img src="../images/share-icon.svg" alt=""></a>
+                </div>
+                <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+                  <a class="btn btn-secondary" href="#!">مبلغ التبرع | $</a>
+                  <a class="btn btn-main" href="#!">تبرع الآن</a>
+                </div>
+                <div class="amount d-flex justify-content-between align-items-center mb-3">
+                  <div>
+                    <span class="amount-name">تم جمع</span>
+                    <span class="amount-value">1000$</span>
+                  </div>
+                  <div>
+                    <span class="amount-name">المبلغ المتبقي</span>
+                    <span class="amount-value">1000$</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#!">عرض التفاصيل</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Latest Initiatives -->
+
+
+  <!-- Start Previous Initiatives  -->
+  <section class="initiatives section-spacing">
+    <div class="container wow animate__animated animate__fadeInUp">
+      <h2 class="section-title">مبادرات سابقة</h2>
+      <div class="row">
+        <!-- Card -->
+        <div class="col-12 col-md-3">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <div class="card-domain">مشروع تعليمي</div>
+            </div>
+            <div class="card-body">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-5 mb-3">
+                <h5 class="card-title">اسم المبادرة</h5>
+                <a href="#!"><img src="../images/share-icon.svg" alt=""></a>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+                <a class="btn btn-secondary" href="#!">مبلغ التبرع | $</a>
+                <a class="btn btn-main" href="#!">تبرع الآن</a>
+              </div>
+              <div class="amount d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <span class="amount-name">تم جمع</span>
+                  <span class="amount-value">1000$</span>
+                </div>
+                <div>
+                  <span class="amount-name">المبلغ المتبقي</span>
+                  <span class="amount-value">1000$</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#!">عرض التفاصيل</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <!-- Card -->
+        <div class="col-12 col-md-3">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <div class="card-domain">مشروع تعليمي</div>
+            </div>
+            <div class="card-body">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-5 mb-3">
+                <h5 class="card-title">اسم المبادرة</h5>
+                <a href="#!"><img src="../images/share-icon.svg" alt=""></a>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+                <a class="btn btn-secondary" href="#!">مبلغ التبرع | $</a>
+                <a class="btn btn-main" href="#!">تبرع الآن</a>
+              </div>
+              <div class="amount d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <span class="amount-name">تم جمع</span>
+                  <span class="amount-value">1000$</span>
+                </div>
+                <div>
+                  <span class="amount-name">المبلغ المتبقي</span>
+                  <span class="amount-value">1000$</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#!">عرض التفاصيل</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-3">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <div class="card-domain">مشروع تعليمي</div>
+            </div>
+            <div class="card-body">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-5 mb-3">
+                <h5 class="card-title">اسم المبادرة</h5>
+                <a href="#!"><img src="../images/share-icon.svg" alt=""></a>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+                <a class="btn btn-secondary" href="#!">مبلغ التبرع | $</a>
+                <a class="btn btn-main" href="#!">تبرع الآن</a>
+              </div>
+              <div class="amount d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <span class="amount-name">تم جمع</span>
+                  <span class="amount-value">1000$</span>
+                </div>
+                <div>
+                  <span class="amount-name">المبلغ المتبقي</span>
+                  <span class="amount-value">1000$</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#!">عرض التفاصيل</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-3">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <div class="card-domain">مشروع تعليمي</div>
+            </div>
+            <div class="card-body">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-5 mb-3">
+                <h5 class="card-title">اسم المبادرة</h5>
+                <a href="#!"><img src="../images/share-icon.svg" alt=""></a>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+                <a class="btn btn-secondary" href="#!">مبلغ التبرع | $</a>
+                <a class="btn btn-main" href="#!">تبرع الآن</a>
+              </div>
+              <div class="amount d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <span class="amount-name">تم جمع</span>
+                  <span class="amount-value">1000$</span>
+                </div>
+                <div>
+                  <span class="amount-name">المبلغ المتبقي</span>
+                  <span class="amount-value">1000$</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#!">عرض التفاصيل</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-3">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <div class="card-domain">مشروع تعليمي</div>
+            </div>
+            <div class="card-body">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-5 mb-3">
+                <h5 class="card-title">اسم المبادرة</h5>
+                <a href="#!"><img src="../images/share-icon.svg" alt=""></a>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+                <a class="btn btn-secondary" href="#!">مبلغ التبرع | $</a>
+                <a class="btn btn-main" href="#!">تبرع الآن</a>
+              </div>
+              <div class="amount d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <span class="amount-name">تم جمع</span>
+                  <span class="amount-value">1000$</span>
+                </div>
+                <div>
+                  <span class="amount-name">المبلغ المتبقي</span>
+                  <span class="amount-value">1000$</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#!">عرض التفاصيل</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Previous Initiatives  -->
+
+  <!-- Start Pagination -->
+  <nav class="section-spacing pb-5" aria-label="Page navigation">
+    <div class="container text-center">
+      <ul class="pagination justify-content-center gap-2">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="First">
+            &laquo;&laquo;
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            &lsaquo;
+          </a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item disabled"><span class="page-link">…</span></li>
+        <li class="page-item"><a class="page-link" href="#">10</a></li>
+
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            &rsaquo;
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Last">
+            &raquo;&raquo;
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Pagination -->
+
+
+  <!-- Start Footer -->
+  <footer>
+    <div class="footer-section">
+      <div class="container">
+        <div class="footer-heading d-flex flex-column flex-md-row gap-5">
+          <div class="w-50 d-flex align-items-center gap-3">
+            <img src="../images/footer-heading.svg" alt="">
+            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+              يمكنك..</p>
+          </div>
+          <div class="w-50">
+            <h4>كن على إطلاع دائم بحملاتنا</h4>
+            <div class="input-group">
+              <input type="email" class="form-control text-start" placeholder="أدخل البريد الإلكتروني الخاص بك هنا">
+              <button class="btn btn-main px-5 d-flex align-items-center justify-content-center" type="submit">
+                <img src="../images/send.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <img class="img-fluid mb-2" src="../images/footer-content.svg" alt="logo-dark">
+            <p>نسعى لإحداث فرق إيجابي في حياة المحتاجين من خلال مبادراتنا الإنسانية</p>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4>الأقسام الداخلية</h4>
+            <ul>
+              <li><a href="#!">عن الجمعية</a></li>
+              <li><a href="#!">المبادرات</a></li>
+              <li><a href="#!">كيف تتبرع</a></li>
+              <li><a href="#!">الأخبار</a></li>
+              <li><a href="#!">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4>الخصوصية و الأمان</h4>
+            <ul>
+              <li><a href="#!">سياسة الخصوصية</a></li>
+              <li><a href="#!">سياسة الأمان</a></li>
+              <li><a href="#!">الشروط و الأحكام</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4>تواصل معنا</h4>
+            <ul class="contanct-us">
+              <li>
+                <img src="../images/location.svg" alt="Location Icon">
+                <a href="#!" target="_blank">تعاونية الصومام 2 مكرر- لاكوت, بئر مراد رايس, الجزائر العاصمة, الجزائر.</a>
+              </li>
+              <li>
+                <img src="../images/calling.svg" alt="Location Icon">
+                <div>
+                  <a class="d-block mb-1" href="tel:+213797691031">+213-797-6910-31</a>
+                  <a class="d-block" href="tel:+905335721575">+905-335-721-575</a>
+                </div>
+              </li>
+              <li>
+                <img src="../images/message.svg" alt="Location Icon">
+                <a href="mailto:contact@elbarakah-dz.com">Contact@elbarakah-dz.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="m-0">جميع الحقوق محفوظة لجمعية البركة الدولية</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- End Footer Section -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/wow.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

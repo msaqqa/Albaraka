@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albaraka</title>
+  <link rel="icon" type="image/svg" href="./images/logo.svg">
+  <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="../css/animate.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="navbar-container w-100 d-flex justify-content-between align-items-center">
+        <div class="w-100 d-flex justify-content-between align-items-center">
+          <a id="navbar-brand" class="navbar-brand" href="#">
+            <img src="../images/logo.svg" alt="Logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-top flex-column flex-md-row justify-content-between align-items-center"
+            id="offcanvasNavbar">
+            <button class="btn-close d-lg-none ms-auto me-3" type="button" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+            <ul class="navbar-nav mb-3 mb-lg-0 gap-4">
+              <li class="nav-item">
+                <a class="nav-link" href="../home.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">عن الجمعية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./initiatives.html">المبادرات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./donate.html">كيف تتبرع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./news.html">الأخبار</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">تواصل معنا</a>
+              </li>
+            </ul>
+            <div class="d-flex gap-3">
+              <div class="dropdown">
+                <div class="dropdown-toggle d-flex align-items-center gap-3" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../images/language.svg" alt="">
+                  <span>العربية</span>
+                </div>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="home.html">العربية</a></li>
+                  <li><a class="dropdown-item" href="#!">الانجلزية</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-main px-5" href="#!">تبرع</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Start Hero -->
+  <section class="page-hero">
+    <div class="page-hero-cover">
+      <div class="container position-relative h-100 wow animate__animated animate__fadeInUp">
+        <div class="h-100 d-flex justify-content-center align-items-center">
+          <h1>آخر أخبار جمعية البركة الخيرية</h1>
+        </div>
+        <div class="social d-flex flex-column gap-2">
+          <a href="#!"><img src="../images/facebook-icon.svg" alt=""></a>
+          <a href="#!"><img src="../images/x-icon.svg" alt=""></a>
+          <a href="#!"><img src="../images/whatsapp-icon.svg" alt=""></a>
+          <a href="#!"><img src="../images/instagram-icon.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <!-- Start News Banner Section -->
+  <section class="news-banner section-spacing">
+    <div class="container wow animate__animated animate__fadeInUp">
+      <div class="news-banner-cover">
+        <div class="banner-text">
+          <span>منذ دقيقتين</span>
+          <h2>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة </h2>
+          <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+            أن تولد مثل هذا النص أو العديد من النصوص الأخرى</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End News Banner Section -->
+
+  <!-- Start News Cards Section -->
+  <section class="news-cards section-spacing">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-5">
+        <!-- Filter Buttons -->
+        <div class="btn-group" role="group" aria-label="Filters">
+          <button type="button" class="btn btn-main">كل الأخبار</button>
+          <button type="button" class="btn btn-light">نوع خبر 1</button>
+          <button type="button" class="btn btn-light">نوع خبر 2</button>
+          <button type="button" class="btn btn-light">نوع خبر 1</button>
+          <button type="button" class="btn btn-light">نوع خبر 2</button>
+        </div>
+
+        <!-- Search Box -->
+        <div class="input-group" style="max-width: 250px;">
+          <span class="input-group-text bg-white border-end-0">
+            <i class="bi bi-search"></i>
+          </span>
+          <input type="text" class="form-control border-start-0" placeholder="إبحث عن صندوق...">
+        </div>
+      </div>
+      <div class="row">
+        <!-- Card -->
+        <div class="col-12 col-md-3">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <a class="share" href="#!"><img src="../images/share-icon.svg" alt=""></a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../images/news/dates-Icon.svg" alt="">
+                  <span>2023/9/14</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span>10 تعليقات</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span>25</span>
+                </div>
+              </div>
+              <h5 class="card-title">هذا النص هو مثال لنص</h5>
+              <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#!">قراءة المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- End News Cards Section -->
+
+  <!-- Start Footer -->
+  <footer>
+    <div class="footer-section">
+      <div class="container">
+        <div class="footer-heading d-flex flex-column flex-md-row gap-5">
+          <div class="w-50 d-flex align-items-center gap-3">
+            <img src="../images/footer-heading.svg" alt="">
+            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+              يمكنك..</p>
+          </div>
+          <div class="w-50">
+            <h4>كن على إطلاع دائم بحملاتنا</h4>
+            <div class="input-group">
+              <input type="email" class="form-control text-start" placeholder="أدخل البريد الإلكتروني الخاص بك هنا">
+              <button class="btn btn-main px-5 d-flex align-items-center justify-content-center" type="submit">
+                <img src="../images/send.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <img class="img-fluid mb-2" src="../images/footer-content.svg" alt="logo-dark">
+            <p>نسعى لإحداث فرق إيجابي في حياة المحتاجين من خلال مبادراتنا الإنسانية</p>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4>الأقسام الداخلية</h4>
+            <ul>
+              <li><a href="#!">عن الجمعية</a></li>
+              <li><a href="#!">المبادرات</a></li>
+              <li><a href="#!">كيف تتبرع</a></li>
+              <li><a href="#!">الأخبار</a></li>
+              <li><a href="#!">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4>الخصوصية و الأمان</h4>
+            <ul>
+              <li><a href="#!">سياسة الخصوصية</a></li>
+              <li><a href="#!">سياسة الأمان</a></li>
+              <li><a href="#!">الشروط و الأحكام</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4>تواصل معنا</h4>
+            <ul class="contanct-us">
+              <li>
+                <img src="../images/location.svg" alt="Location Icon">
+                <a href="#!" target="_blank">تعاونية الصومام 2 مكرر- لاكوت, بئر مراد رايس, الجزائر العاصمة, الجزائر.</a>
+              </li>
+              <li>
+                <img src="../images/calling.svg" alt="Location Icon">
+                <div>
+                  <a class="d-block mb-1" href="tel:+213797691031">+213-797-6910-31</a>
+                  <a class="d-block" href="tel:+905335721575">+905-335-721-575</a>
+                </div>
+              </li>
+              <li>
+                <img src="../images/message.svg" alt="Location Icon">
+                <a href="mailto:contact@elbarakah-dz.com">Contact@elbarakah-dz.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="m-0">جميع الحقوق محفوظة لجمعية البركة الدولية</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- End Footer Section -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/wow.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
