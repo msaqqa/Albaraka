@@ -7,6 +7,7 @@
   <title>Albaraka</title>
   <link rel="icon" type="image/svg" href="./images/logo.svg">
   <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="../css/all.min.css">
   <link rel="stylesheet" href="../css/animate.min.css">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -105,8 +106,8 @@
 
   <!-- Start News Cards Section -->
   <section class="news-cards section-spacing">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-5">
+    <div class="container wow animate__animated animate__fadeInUp">
+      <div class="d-flex justify-content-center justify-content-md-between align-items-center flex-wrap gap-3 mb-5">
         <!-- Filter Buttons -->
         <div class="btn-group" role="group" aria-label="Filters">
           <button type="button" class="btn btn-main">كل الأخبار</button>
@@ -115,18 +116,17 @@
           <button type="button" class="btn btn-light">نوع خبر 1</button>
           <button type="button" class="btn btn-light">نوع خبر 2</button>
         </div>
-
         <!-- Search Box -->
-        <div class="input-group" style="max-width: 250px;">
-          <span class="input-group-text bg-white border-end-0">
-            <i class="bi bi-search"></i>
+        <div class="search-box input-group">
+          <input type="text" class="form-control" placeholder="ابحث عن مشروع...">
+          <span class="input-group-text bg-white border-start-0">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </span>
-          <input type="text" class="form-control border-start-0" placeholder="إبحث عن صندوق...">
         </div>
       </div>
       <div class="row">
         <!-- Card -->
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-4 col-lg-3 mb-4">
           <div class="card">
             <div class="card-img">
               <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
@@ -134,30 +134,431 @@
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center mb-3">
-                <div class="d-flex align-items-center gap-2">
+                <div class="d-flex align-items-center gap-1">
                   <img src="../images/news/dates-Icon.svg" alt="">
-                  <span>2023/9/14</span>
+                  <span class="info-text">2023/9/14</span>
                 </div>
-                <div class="d-flex align-items-center gap-2">
+                <div class="d-flex align-items-center gap-1">
                   <img src="../images/news/communication-Icon.svg" alt="">
-                  <span>10 تعليقات</span>
+                  <span class="info-text">10 تعليقات</span>
                 </div>
-                <div class="d-flex align-items-center gap-2">
+                <div class="d-flex align-items-center gap-1">
                   <img src="../images/news/communication-Icon.svg" alt="">
-                  <span>25</span>
+                  <span class="info-text">25</span>
                 </div>
               </div>
               <h5 class="card-title">هذا النص هو مثال لنص</h5>
               <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
             </div>
-            <div class="card-footer text-center">
-              <a href="#!">قراءة المزيد</a>
+            <div class="card-footer">
+              <a href="./news-details.html">
+                <span>قراءة المزيد</span>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <a class="share" href="#!"><img src="../images/share-icon.svg" alt=""></a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/dates-Icon.svg" alt="">
+                  <span class="info-text">2023/9/14</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">10 تعليقات</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">25</span>
+                </div>
+              </div>
+              <h5 class="card-title">هذا النص هو مثال لنص</h5>
+              <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            </div>
+            <div class="card-footer">
+              <a href="./news-details.html">
+                <span>قراءة المزيد</span>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <a class="share" href="#!"><img src="../images/share-icon.svg" alt=""></a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/dates-Icon.svg" alt="">
+                  <span class="info-text">2023/9/14</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">10 تعليقات</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">25</span>
+                </div>
+              </div>
+              <h5 class="card-title">هذا النص هو مثال لنص</h5>
+              <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            </div>
+            <div class="card-footer">
+              <a href="./news-details.html">
+                <span>قراءة المزيد</span>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <a class="share" href="#!"><img src="../images/share-icon.svg" alt=""></a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/dates-Icon.svg" alt="">
+                  <span class="info-text">2023/9/14</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">10 تعليقات</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">25</span>
+                </div>
+              </div>
+              <h5 class="card-title">هذا النص هو مثال لنص</h5>
+              <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            </div>
+            <div class="card-footer">
+              <a href="./news-details.html">
+                <span>قراءة المزيد</span>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <a class="share" href="#!"><img src="../images/share-icon.svg" alt=""></a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/dates-Icon.svg" alt="">
+                  <span class="info-text">2023/9/14</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">10 تعليقات</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">25</span>
+                </div>
+              </div>
+              <h5 class="card-title">هذا النص هو مثال لنص</h5>
+              <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            </div>
+            <div class="card-footer">
+              <a href="./news-details.html">
+                <span>قراءة المزيد</span>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <a class="share" href="#!"><img src="../images/share-icon.svg" alt=""></a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/dates-Icon.svg" alt="">
+                  <span class="info-text">2023/9/14</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">10 تعليقات</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">25</span>
+                </div>
+              </div>
+              <h5 class="card-title">هذا النص هو مثال لنص</h5>
+              <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            </div>
+            <div class="card-footer">
+              <a href="./news-details.html">
+                <span>قراءة المزيد</span>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <a class="share" href="#!"><img src="../images/share-icon.svg" alt=""></a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/dates-Icon.svg" alt="">
+                  <span class="info-text">2023/9/14</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">10 تعليقات</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">25</span>
+                </div>
+              </div>
+              <h5 class="card-title">هذا النص هو مثال لنص</h5>
+              <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            </div>
+            <div class="card-footer">
+              <a href="./news-details.html">
+                <span>قراءة المزيد</span>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <a class="share" href="#!"><img src="../images/share-icon.svg" alt=""></a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/dates-Icon.svg" alt="">
+                  <span class="info-text">2023/9/14</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">10 تعليقات</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">25</span>
+                </div>
+              </div>
+              <h5 class="card-title">هذا النص هو مثال لنص</h5>
+              <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            </div>
+            <div class="card-footer">
+              <a href="./news-details.html">
+                <span>قراءة المزيد</span>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <a class="share" href="#!"><img src="../images/share-icon.svg" alt=""></a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/dates-Icon.svg" alt="">
+                  <span class="info-text">2023/9/14</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">10 تعليقات</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">25</span>
+                </div>
+              </div>
+              <h5 class="card-title">هذا النص هو مثال لنص</h5>
+              <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            </div>
+            <div class="card-footer">
+              <a href="./news-details.html">
+                <span>قراءة المزيد</span>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <a class="share" href="#!"><img src="../images/share-icon.svg" alt=""></a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/dates-Icon.svg" alt="">
+                  <span class="info-text">2023/9/14</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">10 تعليقات</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">25</span>
+                </div>
+              </div>
+              <h5 class="card-title">هذا النص هو مثال لنص</h5>
+              <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            </div>
+            <div class="card-footer">
+              <a href="./news-details.html">
+                <span>قراءة المزيد</span>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <a class="share" href="#!"><img src="../images/share-icon.svg" alt=""></a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/dates-Icon.svg" alt="">
+                  <span class="info-text">2023/9/14</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">10 تعليقات</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">25</span>
+                </div>
+              </div>
+              <h5 class="card-title">هذا النص هو مثال لنص</h5>
+              <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            </div>
+            <div class="card-footer">
+              <a href="./news-details.html">
+                <span>قراءة المزيد</span>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-img">
+              <img src="../images/initiatives-card.png" class="card-img-top" alt="...">
+              <a class="share" href="#!"><img src="../images/share-icon.svg" alt=""></a>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/dates-Icon.svg" alt="">
+                  <span class="info-text">2023/9/14</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">10 تعليقات</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../images/news/communication-Icon.svg" alt="">
+                  <span class="info-text">25</span>
+                </div>
+              </div>
+              <h5 class="card-title">هذا النص هو مثال لنص</h5>
+              <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            </div>
+            <div class="card-footer">
+              <a href="./news-details.html">
+                <span>قراءة المزيد</span>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
   </section>
   <!-- End News Cards Section -->
+
+  <!-- Start Pagination -->
+  <nav class="py-5" aria-label="Page navigation">
+    <div class="container text-center">
+      <ul class="pagination justify-content-center gap-2">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="First">
+            &laquo;&laquo;
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            &lsaquo;
+          </a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item disabled"><span class="page-link">…</span></li>
+        <li class="page-item"><a class="page-link" href="#">10</a></li>
+
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            &rsaquo;
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Last">
+            &raquo;&raquo;
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Pagination -->
 
   <!-- Start Footer -->
   <footer>
@@ -232,6 +633,7 @@
 
   <!-- End Footer Section -->
   <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/all.min.js"></script>
   <script src="../js/wow.min.js"></script>
   <script src="../js/main.js"></script>
 </body>
