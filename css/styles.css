@@ -712,6 +712,33 @@ footer {
 .pagination .page-link:focus {
   box-shadow: 0 0 0 0.25rem rgba(29, 140, 47, 0.25);
 }
+.share-content {
+  position: relative;
+}
+.share-btn,
+.close-btn {
+  border: 0;
+  background-color: transparent;
+}
+.share-list {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(140, 140, 140, 0.15);
+}
+.share-list a {
+  width: 24px;
+}
+.share-list a img {
+  width: 100%;
+}
 /* End Page Pagination */
 /* End shared components */
 
@@ -1134,6 +1161,42 @@ footer {
 
 /* ===== Start News Details Page ===== */
 
-/* ===== Start Contact Us Page ===== */
-
-/* ===== End Contact Us Page ===== */
+/* ===== Start Contact Page ===== */
+.contact .contact-info {
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+.contact .contact-info .contact-info-icon {
+  width: 70px;
+  flex-shrink: 0;
+  position: relative;
+  border-left: 1px solid #ddd;
+}
+.contact .contact-info .contact-info-text {
+  padding-right: 14px;
+}
+.contact .contact-map iframe {
+  min-height: 400px;
+  border-radius: 16px;
+}
+.contact .contact-form {
+  padding: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+.contact .contact-form .form-label {
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact .contact-form .form-control {
+  background-color: #fafafa;
+}
+@media (max-width: 768px) {
+  .contact .contact-map,
+  .contact .contact-form {
+    width: 100% !important;
+  }
+}
+/* ===== End Contact Page ===== */

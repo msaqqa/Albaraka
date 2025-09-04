@@ -119,3 +119,27 @@ if (document.querySelector(".campaigns-cover")) {
     window.addEventListener("resize", updateBeforeStyle);
   }
 }
+// ================= Share Button =================
+document.querySelectorAll(".share-content").forEach((shareContent) => {
+  const shareBtn = shareContent.querySelector(".share-btn");
+  const shareList = shareContent.querySelector(".share-list");
+  const closeBtn = shareContent.querySelector(".close-btn");
+
+  shareBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    shareList.classList.toggle("d-none");
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      shareList.classList.add("d-none");
+    });
+  }
+
+  document.addEventListener("click", (e) => {
+    if (!shareContent.contains(e.target)) {
+      shareList.classList.add("d-none");
+    }
+  });
+});
