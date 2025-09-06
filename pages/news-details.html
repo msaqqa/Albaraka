@@ -7,7 +7,6 @@
   <title>Albaraka</title>
   <link rel="icon" type="image/svg" href="./images/logo.svg">
   <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
-  <link rel="stylesheet" href="../css/all.min.css">
   <link rel="stylesheet" href="../css/animate.min.css">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -18,7 +17,7 @@
     <div class="container-fluid">
       <div class="navbar-container w-100 d-flex justify-content-between align-items-center">
         <div class="w-100 d-flex justify-content-between align-items-center">
-          <a id="navbar-brand" class="navbar-brand" href="#">
+          <a id="navbar-brand" class="navbar-brand" href="../index.html">
             <img src="../images/logo.svg" alt="Logo" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -38,6 +37,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./initiatives.html">المبادرات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./app.html">تطبيق كفالة</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./donate.html">كيف تتبرع</a>
@@ -76,7 +78,11 @@
     <div class="page-hero-cover">
       <div class="container position-relative h-100 wow animate__animated animate__fadeInUp">
         <div class="h-100 d-flex justify-content-center align-items-center">
-          <h1>الأخبار > عنوان الخبر</h1>
+          <h1>
+            <span>الأخبار</span>
+            <img src="../images/icons/hero-arrow.svg" alt="">
+            <span class="hero-sub-title">عنوان الخبر</span>
+          </h1>
         </div>
         <div class="social d-flex flex-column gap-2">
           <a href="#!"><img src="../images/facebook-icon.svg" alt=""></a>
@@ -185,6 +191,14 @@
         <div class="similar-news col-12 col-md-4">
           <div class="similar-news-heading mb-4">
             <h3>أخبار مشابهة</h3>
+            <a href="#!">
+              <svg class="icon" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.2793 2.50391C17.6701 2.65223 22 7.07356 22 12.5C22 18.01 17.52 22.5 12 22.5C6.49 22.5 2 18.01 2 12.5C2 6.98 6.49 2.5 12 2.5L12.2793 2.50391ZM13.9805 8.5C13.6805 8.2 13.2099 8.2 12.9199 8.5L9.42969 11.9697C9.2897 12.1097 9.20996 12.3 9.20996 12.5C9.20996 12.7 9.2897 12.8903 9.42969 13.0303L12.9199 16.5C13.0599 16.65 13.2504 16.7197 13.4404 16.7197C13.6403 16.7196 13.8306 16.6499 13.9805 16.5C14.2702 16.2 14.2696 15.7304 13.9697 15.4404L11.0195 12.5L13.9697 9.55957C14.2696 9.26964 14.2702 8.79 13.9805 8.5Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
           </div>
           <div class="similar-news-list d-flex flex-column gap-3">
             <div class="d-flex flex-column gap-3 border-bottom">
@@ -201,12 +215,12 @@
             </div>
           </div>
           <div class="mt-3">
-            <h3 class="mb-2">أخبار مشابهة</h3>
+            <h3 class="mb-2">مشاركة</h3>
             <div class="d-flex align-items-center gap-3">
-              <a href="#!"><img src="../images/news/facebook.svg" alt=""></a>
-              <a href="#!"><img src="../images/news/instagram.svg" alt=""></a>
-              <a href="#!"><img src="../images/news/twitter.svg" alt=""></a>
-              <a href="#!"><img src="../images/news/whatsapp.svg" alt=""></a>
+              <a href="#!"><img src="../images/social/facebook.svg" alt=""></a>
+              <a href="#!"><img src="../images/social/instagram.svg" alt=""></a>
+              <a href="#!"><img src="../images/social/twitter.svg" alt=""></a>
+              <a href="#!"><img src="../images/social/whatsapp.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -222,9 +236,10 @@
       <div class="container">
         <div class="footer-heading d-flex flex-column flex-md-row gap-5">
           <div class="w-50">
-            <div class="d-flex align-items-center gap-3">
-              <img src="../images/footer-heading.jpg" alt="">
-              <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img class="flex-shrink-0" width="55px" src="../images/footer-heading.jpg" alt="">
+              <p class="mb-0">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                العربى، حيث
                 يمكنك..</p>
             </div>
             <div class=" d-flex align-items-center gap-3">
@@ -253,11 +268,11 @@
           <div class="col-12 col-md-3">
             <h4>الأقسام الداخلية</h4>
             <ul>
-              <li><a href="#!">عن الجمعية</a></li>
-              <li><a href="#!">المبادرات</a></li>
-              <li><a href="#!">كيف تتبرع</a></li>
-              <li><a href="#!">الأخبار</a></li>
-              <li><a href="#!">تواصل معنا</a></li>
+              <li><a href="./about.html">عن الجمعية</a></li>
+              <li><a href="./initiatives.html">المبادرات</a></li>
+              <li><a href="./donate.html">كيف تتبرع</a></li>
+              <li><a href="./news.html">الأخبار</a></li>
+              <li><a href="./contact.html">تواصل معنا</a></li>
             </ul>
           </div>
           <div class="col-12 col-md-3">
@@ -298,7 +313,6 @@
 
   <!-- End Footer Section -->
   <script src="../js/bootstrap.bundle.min.js"></script>
-  <script src="../js/all.min.js"></script>
   <script src="../js/wow.min.js"></script>
   <script src="../js/main.js"></script>
 </body>
