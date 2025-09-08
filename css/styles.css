@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
-@import url("odometer-theme-default.css");
 
 /* Start Variables */
 :root {
@@ -92,6 +91,11 @@ ul {
 @media (max-width: 768px) {
   .section-title {
     font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .w-lg-50 {
+    width: 50% !important;
   }
 }
 /* End Components */
@@ -282,7 +286,7 @@ ul {
   border-radius: 16px;
   overflow: hidden;
 }
-.domains .swiper-slide img {
+.domains .swiper-slide > img {
   width: 100%;
 }
 .domains .domain-item-details {
@@ -536,10 +540,6 @@ ul {
   border-radius: 21px;
 }
 @media (max-width: 768px) {
-  .grant .grant-content,
-  .grant .grant-images {
-    width: 100% !important;
-  }
   .grant .grant-images .img-center {
     display: none;
   }
@@ -586,12 +586,6 @@ ul {
   font-weight: 700;
   line-height: 40px;
   margin-bottom: 40px;
-}
-@media (max-width: 768px) {
-  .ather-video,
-  .ather-content {
-    width: 100% !important;
-  }
 }
 /* End ather-section */
 
@@ -735,6 +729,14 @@ footer {
 /* Ennd Page Hero */
 
 /* Start Page Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-bottom: 16px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 .pagination .page-link {
   width: 40px;
   height: 40px;
@@ -769,6 +771,9 @@ footer {
   border: 0;
   background-color: transparent;
 }
+.share-icon.active path {
+  fill: #6e6e6e;
+}
 .share-list {
   position: absolute;
   top: 120%;
@@ -786,7 +791,7 @@ footer {
   width: 28px;
 }
 .share-list a img {
-  width: 100%;
+  width: 100% !important;
 }
 /* End Page Pagination */
 /* End shared components */
@@ -1142,10 +1147,14 @@ footer {
 }
 .details-arrow {
   color: var(--main-color);
+  transition: transform 0.3s ease;
 }
 .news-cards .card .card-footer:hover a,
 .news-cards .card .card-footer:hover .details-arrow {
   color: #565656;
+}
+.news-cards .card .card-footer:hover .details-arrow {
+  transform: translateX(-5px);
 }
 /* End News Card Section  */
 /* ===== End News Page ===== */
@@ -1276,11 +1285,5 @@ footer {
 .contact .contact-form .form-control {
   background-color: #fafafa;
   height: 50px;
-}
-@media (max-width: 768px) {
-  .contact .contact-map,
-  .contact .contact-form {
-    width: 100% !important;
-  }
 }
 /* ===== End Contact Page ===== */
