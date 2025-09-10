@@ -7,6 +7,7 @@
   <title>Albaraka</title>
   <link rel="icon" type="image/svg" href="./images/logo.svg">
   <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="../css/animate.min.css">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -81,7 +82,7 @@
           <h1>
             <span>المبادرات</span>
             <img src="../images/icons/hero-arrow.svg" alt="">
-            <span class="hero-sub-title">اسم المبادرة</span>
+            <span class="hero-sub-title">تكية طعام لمخيم في غزة</span>
           </h1>
         </div>
         <div class="social d-flex flex-column gap-2">
@@ -100,7 +101,10 @@
     <div class="container wow animate__animated animate__fadeInUp">
       <div class="row">
         <div class="col-12 col-md-8 mb-5 mb-md-0">
-          <img class="img-fluid mb-5" src="../images/news/news-details.png" alt="">
+          <a class="d-block position-relative mb-3" data-fancybox="video" href="../videos/video-01.mp4">
+            <img class="img-fluid" src="../images/initiatives/initiative-details-02.jpg" alt="Story Video" />
+            <img class="video-icon" src="../images/video-icon.svg" alt="">
+          </a>
           <div class="d-flex align-items-center gap-3 mb-4">
             <div class="d-flex align-items-center gap-1">
               <img src="../images/news/date-green-icon.svg" alt="">
@@ -111,13 +115,12 @@
               <span class="info-text">24</span>
             </div>
           </div>
-          <h2>عنوان المبادرة</h2>
-          <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
-            تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق، إذا كنت تحتاج
-            إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد..</p>
+          <h2>تكية طعام لمخيم في غزة</h2>
+          <p>مبادرة إنسانية تهدف إلى توفير وجبات غذائية يومية للأسر المتعففة والنازحين داخل المخيم، للتخفيف من معاناتهم
+            وضمان وصول غذاء صحي ودافئ لهم في ظل الظروف الصعبة.</p>
           <div class="text-accent">
-            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
-              أن تولد مثل هذا النص أو العديد من النصوص الأخرى </p>
+            <p>قال رسول الله ﷺ:"أيما مسلم كسا مسلمًا ثوبًا على عري كساه الله من خضر الجنة، وأيما مسلم أطعم مسلمًا على
+              جوع أطعمه الله من ثمار الجنة، وأيما مسلم سقى مسلمًا على ظمأ سقاه الله من الرحيق المختوم.</p>
           </div>
           <div class="d-flex align-items-center gap-3 mb-3">
             <a class="btn btn-main px-5" href="#!">تبرع الآن</a>
@@ -138,16 +141,16 @@
           </div>
           <div class="similar-news-list d-flex flex-column gap-3">
             <div class="d-flex flex-column gap-3 border-bottom">
-              <img class="img-fluid" src="../images/news/news-item.png" alt="">
-              <h4>هذا النص هو مثال لنص يستبدل </h4>
+              <img class="img-fluid" src="../images/initiatives/initiative-03.jpg" alt="">
+              <h4>300 وجبة ساخنة</h4>
             </div>
             <div class="d-flex flex-column gap-3 border-bottom">
-              <img class="img-fluid" src="../images/news/news-item.png" alt="">
-              <h4>هذا النص هو مثال لنص يستبدل </h4>
+              <img class="img-fluid" src="../images/initiatives/initiative-01.jpg" alt="">
+              <h4>سقيا الماء</h4>
             </div>
             <div class="d-flex flex-column gap-3 border-bottom">
-              <img class="img-fluid" src="../images/news/news-item.png" alt="">
-              <h4>هذا النص هو مثال لنص يستبدل </h4>
+              <img class="img-fluid" src="../images/initiatives/initiative-04.jpg" alt="">
+              <h4>كفالة 10 أيتام</h4>
             </div>
           </div>
           <div class="mt-5">
@@ -172,12 +175,7 @@
       <div class="container">
         <div class="footer-heading d-flex flex-column flex-md-row gap-5">
           <div class="w-lg-50">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <img class="flex-shrink-0" width="55px" src="../images/footer-heading.jpg" alt="">
-              <p class="mb-0">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                العربى، حيث
-                يمكنك..</p>
-            </div>
+            <p class="mb-3">تابعنا عبر منصاتنا لتكون شريكاً في صناعة الأثر ورؤية ثمار عطائكم عن قرب</p>
             <div class="social d-flex align-items-center gap-3">
               <a href="#!"><img src="../images/social/whatsapp.svg" alt=""></a>
               <a href="#!"><img src="../images/social/facebook.svg" alt=""></a>
@@ -248,7 +246,9 @@
   </footer>
 
   <!-- End Footer Section -->
+  <script src="./js/jquery.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery.fancybox.min.js"></script>
   <script src="../js/wow.min.js"></script>
   <script src="../js/main.js"></script>
 </body>
