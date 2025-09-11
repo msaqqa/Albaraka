@@ -71,6 +71,9 @@ ul {
   background-color: var(--main-color) !important;
   color: var(--white-color) !important;
 }
+.form-control {
+  font-family: "Almarai", sans-serif !important;
+}
 .form-control:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
@@ -989,6 +992,7 @@ footer {
 .initiatives .card .amount {
   background-color: #e9f5ee;
   padding: 4px 8px;
+  border-radius: 7px;
 }
 .initiatives .card .card-title {
   white-space: nowrap;
