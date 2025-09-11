@@ -7,6 +7,7 @@
   <title>Albaraka</title>
   <link rel="icon" type="image/svg" href="./images/logo.svg">
   <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="../css/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="../css/animate.min.css">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -77,10 +78,10 @@
   <section class="page-hero">
     <div class="page-hero-cover">
       <div class="container position-relative h-100 wow animate__animated animate__fadeInUp">
-        <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="h-100 d-flex flex-column justify-content-center align-items-center text-center">
           <h1>تطبيق كفالة</h1>
           <p>“كفالة” تطبيق رسمي صادر عن جمعية البركة</p>
-          <img src="../images/google-play-icon.svg" alt="">
+          <a class="d-none d-md-block" href="#!"><img src="../images/google-play-icon.svg" alt=""></a>
         </div>
         <div class="social d-flex flex-column gap-2">
           <a href="#!"><img src="../images/facebook-icon.svg" alt=""></a>
@@ -93,8 +94,8 @@
   </section>
   <!-- End Hero -->
 
-  <!-- Start Aout Us Section  -->
-  <section class="about-us section-spacing">
+  <!-- Start App Intro  -->
+  <section class="app-intro section-spacing">
     <div class="container">
       <div class="d-flex flex-column flex-md-row gap-5">
         <div class="w-lg-50">
@@ -102,7 +103,7 @@
           <p>منصة رقمية رسمية صادرة عن جمعية البركة، تتيح لك الكفالة والتبرع بسهولة وأمان من أي مكان. صُممت لتكون جسرًا
             مباشرًا بين الكافل واليتيم، مع ضمان الشفافية الكاملة، وتتبع أثر تبرعاتك لحظة بلحظة، لتشعر بقيمة عطائك وأثره
             الإنساني المتجدد.</p>
-          <img src="../images/google-play-icon.svg" alt="">
+          <a href="#!"><img src="../images/google-play-icon.svg" alt=""></a>
         </div>
         <div class="w-lg-50">
           <img class="img-fluid" src="../images/app/mobile.jpg" alt="">
@@ -110,7 +111,242 @@
       </div>
     </div>
   </section>
-  <!-- End Aout Us Section  -->
+  <!-- End App Intro  -->
+
+  <!-- Start About App -->
+  <section class="about-app section-spacing">
+    <div class="about-app-content">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-md-center gap-5">
+          <div class="w-lg-50 position-relative">
+            <a class="video-cover" data-fancybox="video" href="../videos/video-01.mp4">
+              <img class="img-fluid" src="../images/app/about.jpg" alt="Story Video" />
+              <img class="video-icon" src="../images/icons/video-red.svg" alt="">
+            </a>
+          </div>
+          <div class="w-lg-50">
+            <h2>كفالة... تطبيق موثوق يصنع الأثر</h2>
+            <p>في أقل من دقيقة، تعرف على بركة، التطبيق الذي يربط بين اليتيم والكافل بطريقة آمنة وشفافة، ويضمن وصول الدعم
+              لمستحقيه بمنتهى الإنسانية والخصوصية</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- End About App -->
+
+  <!-- Start App Features -->
+  <section class="app-features section-spacing">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-md-start gap-5">
+        <div class="w-lg-50">
+          <img class="img-fluid" src="../images/app/features.jpg" alt="">
+        </div>
+        <div class="w-lg-50">
+          <h2>تطبيق كفالة... طريقك السهل لفعل الخير</h2>
+          <p>تطبيق كفالة... طريقك السهل لفعل الخير</p>
+          <!-- Feature Item -->
+          <div class="features-list d-flex flex-wrap align-items-center">
+            <div class="feature-item d-flex flex-column gap-3" bis_skin_checked="1">
+              <img src="../images/app/features-01.svg" alt="" width="56" height="56">
+              <h4>كفالة شفافة ومباشرة</h4>
+              <p>تابع تفاصيل كفالتك، تبرعاتك، وتحديثات اليتيم الذي تدعمه بكل وضوح.</p>
+            </div>
+            <!-- Feature Item -->
+            <div class="feature-item d-flex flex-column gap-3" bis_skin_checked="1">
+              <img src="../images/app/features-02.svg" alt="" width="56" height="56">
+              <h4>تجربة استخدام بسيطة وسلسة</h4>
+              <p>واجهة سهلة الاستخدام تتيح لك التبرع أو الإهداء خلال ثوانٍ.</p>
+            </div>
+            <!-- Feature Item -->
+            <div class="feature-item d-flex flex-column gap-3" bis_skin_checked="1">
+              <img src="../images/app/features-03.svg" alt="" width="56" height="56">
+              <h4>إهداء رقمي مؤثر باسم من تحب</h4>
+              <p> حوّل الكفالة إلى هدية قيّمة، تصل برسالة وشهادة رقمية مصممة باحتراف.</p>
+            </div>
+            <!-- Feature Item -->
+            <div class="feature-item d-flex flex-column gap-3" bis_skin_checked="1">
+              <img src="../images/app/features-04.svg" alt="" width="56" height="56">
+              <h4>إشعارات ذكية وتحديثات فورية</h4>
+              <p> استلم إشعارات بمجرد إتمام كفالة أو تلقي رسالة من اليتيم.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End App Features -->
+
+  <!-- Start App Testimonial -->
+  <section class="app-testimonial section-spacing">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-md-center gap-5">
+        <div class="w-lg-50">
+          <h2>رحلة اليتيم تبدأ من قصته</h2>
+          <p>شاهد كيف يمكن لليتيم أن يشارك قصته بخطوات بسيطة، لتصل إلى الكافل ويبدأ التواصل والدعم بشكل مباشر. بركة تجعل
+            الرحلة أسهل وأكثر كرامة.</p>
+        </div>
+        <div class="w-lg-50 position-relative">
+          <a class="video-cover" data-fancybox="video" href="../videos/video-01.mp4">
+            <img class="img-fluid overflow-hidden" src="../images/app/testimonial.jpg" alt="Story Video" />
+            <img class="video-icon" src="../images/icons/video-red.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End App Testimonial -->
+
+  <!-- Start Download App -->
+  <section class="download-app section-spacing">
+    <div class="download-cover">
+      <div class="container h-100">
+        <div class="h-100 d-flex flex-column flex-md-row align-items-md-center gap-5">
+          <div class="w-lg-50">
+            <h2>حمّل التطبيق أينما كنت، على أي جهاز</h2>
+            <p>تجربة موحّدة وسلسة على جميع أجهزتك<br />لتبقى على اتصال دائم بخدماتنا في أي وقت ومن أي مكان.</p>
+            <p>حمّل تطبيق البركة وكن جزءًا من قصة تغيير حياة :</p>
+            <a href="#!"><img src="../images/google-play-icon.svg" alt=""></a>
+          </div>
+          <div class="w-lg-50 policy-img">
+            <img class="img-fluid" src="../images/app/download.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End download App -->
+
+  <!-- Start FAQ App -->
+  <section class="faq-app section-spacing">
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              كيف يمكنني تحميل التطبيق؟
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <span class="border-span"></span>
+              يمكنك تحميل التطبيق مجانًا من متجر Google Play أو App Store عبر الروابط الموجودة في موقعنا.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              هل التطبيق آمن وموثوق؟
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <span class="border-span"></span>
+              يمكنك تحميل التطبيق مجانًا من متجر Google Play أو App Store عبر الروابط الموجودة في موقعنا.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              هل يمكنني استخدام التطبيق من أي دولة؟
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <span class="border-span"></span>
+              يمكنك تحميل التطبيق مجانًا من متجر Google Play أو App Store عبر الروابط الموجودة في موقعنا.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              هل هناك رسوم لاستخدام التطبيق؟ </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <span class="border-span"></span>
+              يمكنك تحميل التطبيق مجانًا من متجر Google Play أو App Store عبر الروابط الموجودة في موقعنا.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              كيف أتواصل مع فريق الدعم؟ </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <span class="border-span"></span>
+              يمكنك تحميل التطبيق مجانًا من متجر Google Play أو App Store عبر الروابط الموجودة في موقعنا.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              كيف يمكن لليتيم مشاركة قصته؟ </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <span class="border-span"></span>
+              يمكنك تحميل التطبيق مجانًا من متجر Google Play أو App Store عبر الروابط الموجودة في موقعنا.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-0">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              هل يمكن للكافل متابعة أكثر من يتيم؟ </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <span class="border-span"></span>
+              يمكنك تحميل التطبيق مجانًا من متجر Google Play أو App Store عبر الروابط الموجودة في موقعنا.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End FAQ App -->
+
+  <!-- Start App Policy  -->
+  <section class="app-policy section-spacing">
+    <div class="download-cover">
+      <div class="container h-100">
+        <div class="h-100 d-flex flex-column-reverse flex-md-row gap-5">
+          <div class="w-lg-50 policy-img">
+            <img src="../images/app/policy.png" alt="">
+          </div>
+          <div class="w-lg-50 d-flex flex-column justify-content-md-center">
+            <h2>سياسة الخصوصية لتطبيق "كفالة"</h2>
+            <p>نحن في تطبيق "كفالة" نلتزم بحماية خصوصيتك. نقوم بجمع المعلومات الشخصية مثل الاسم والبريد الإلكتروني فقط
+              عند التسجيل أو الاشتراك. تُستخدم هذه البيانات لتحسين تجربتك وتقديم محتوى مخصص. لن نشارك معلوماتك مع أطراف
+              ثالثة دون موافقتك</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End App Policy -->
 
   <!-- Start Footer -->
   <footer>
@@ -190,6 +426,8 @@
 
   <!-- End Footer Section -->
   <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.fancybox.min.js"></script>
   <script src="../js/wow.min.js"></script>
   <script src="../js/main.js"></script>
 </body>
