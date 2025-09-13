@@ -1,40 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albaraka</title>
-    <link rel="icon" type="image/svg" href="../images/logo.svg">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="../css/animate.min.css">
-    <link rel="stylesheet" href="../css/app.css">
-    <style>
-        .navbar .dropdown-menu {
-            left: -1px;
-        }
-
-        .phone.phone-end img {
-            transform: rotate(10deg)scale(0.9) !important;
-        }
-
-        .phone.phone-start img {
-            transform: rotate(-10deg) scale(0.9) !important;
-        }
-
-        .contact-section .form-floating>.form-control {
-            padding-left: 37px;
-        }
-
-        .contact-section .form-floating>label {
-            left: 25px;
-        }
-
-        .contact-section .input-icon {
-            left: 5px;
-        }
-    </style>
+    <title>البركة</title>
+    <link rel="icon" type="image/svg" href="./images/logo.svg">
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 
 <body>
@@ -44,7 +19,7 @@
             <div class="navbar-container w-100 d-flex justify-content-between align-items-center">
                 <div class="w-100 d-flex justify-content-between align-items-center">
                     <a id="navbar-brand" class="navbar-brand" href="../index.html">
-                        <img src="../images/logo.svg" alt="Logo" />
+                        <img src="./images/logo.svg" alt="Logo" />
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -80,8 +55,8 @@
                                     <span>AR</span>
                                 </div>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="index.html">AR</a></li>
-                                    <li><a class="dropdown-item" href="index-en.html">EN</a></li>
+                                    <li><a class="dropdown-item" href="./landing-page.html">AR</a></li>
+                                    <li><a class="dropdown-item" href="./landing-page-en.html">EN</a></li>
                                 </ul>
                             </div>
                             <a class="btn btn-main" href="#!">حمّل التطبيق الآن</a>
@@ -96,33 +71,32 @@
 
     <!-- Start Hero Section -->
     <section id="main" class="hero-section d-flex justify-content-center align-items-center">
-        <div class="container-fluid d-flex max-w-100 wow animate__animated animate__fadeInUp">
+        <div class="container-fluid d-flex wow animate__animated animate__fadeInUp">
             <!-- phone left image -->
             <div class="phone phone-start">
-                <img class="d-none d-md-block" src="../images/mobile-start.png" alt="Mobile Left">
+                <img class="d-none d-md-block" src="./images/landing-page/mobile-start.png" alt="Mobile Left">
             </div>
             <div class="position-relative">
-                <img class="icon icon-gift" src="../images/gift-icon.png" alt="Gift Icon">
-                <img class="icon icon-hand" src="../images/hand-icon.svg" alt="Hand Icon">
-                <img class="icon icon-star" src="../images/star-icon.svg" alt="Star Icon">
+                <img class="icon icon-gift" src="./images/gift-icon.png" alt="Gift Icon">
+                <img class="icon icon-hand" src="./images/hand-icon.svg" alt="Hand Icon">
+                <img class="icon icon-star" src="./images/star-icon.svg" alt="Star Icon">
                 <div class="text-center">
                     <h1 class="hero-title">كفالة يتيم أصبحت أقرب إليك من أي وقتٍ مضى</h1>
-                    <p class="hero-desc">في عالم مزدحم، كن سببًا في سعادة قلب صغير حمل تطبيق بركة وابدأ مشوار
-                        العطاء.
+                    <p class="hero-desc">في عالم مزدحم، كن سببًا في سعادة قلب صغير حمل تطبيق بركة وابدأ مشوار العطاء.
                     </p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center gap-4">
                     <a href="#!">
-                        <img src="../images/google-play-icon.svg" alt="">
+                        <img src="./images/google-play-icon.svg" alt="">
                     </a>
                     <a href="#!">
-                        <img src="../images/apple-icon.svg" alt="">
+                        <img src="./images/apple-icon.svg" alt="">
                     </a>
                 </div>
             </div>
             <!-- phone right image -->
             <div class="phone phone-end">
-                <img class="d-none d-md-block" src="../images/mobile-end.png" alt="Mobile Right">
+                <img class="d-none d-md-block" src="./images/landing-page/mobile-end.png" alt="Mobile Right">
             </div>
         </div>
     </section>
@@ -139,7 +113,7 @@
             </div>
             <div class="text-center video">
                 <a data-fancybox="video" href="./videos/جمعية البركة.mp4">
-                    <img src="../images/effect.png" alt="Video 1" />
+                    <img src="./images/landing-page/effect.png" alt="Video 1" />
                 </a>
             </div>
         </div>
@@ -152,36 +126,37 @@
             <div class="text-center">
                 <h2 class="section-title">تطبيق البركة... طريقك السهل لفعل الخير</h2>
                 <p class="section-desc">البركة هو تطبيق خيري مبتكر يربط بين الكافلين والأيتام، ويسهّل عملية التبرع،
-                    الكفالة، وحتى الإهداء بطريقة رقمية بسيطة، شفافة، ومؤثرة.</p>
+                    الكفالة، وحتى الإهداء
+                    بطريقة رقمية بسيطة، شفافة، ومؤثرة.</p>
             </div>
             <div class="d-flex flex-column flex-md-row align-items-stretch gap-5">
-                <div class="w-100 mx-auto"><img class="w-100 h-100 object-fit-cover" src="../images/features.png"
-                        alt="">
+                <div class="w-100 mx-auto"><img class="w-100 h-100 object-fit-cover"
+                        src="./images/landing-page/features.png" alt="">
                 </div>
                 <ul class="w-100 d-flex flex-column gap-3 pt-md-5">
                     <li class="d-flex align-items-center gap-2">
-                        <img width="24" height="24" src="../images/check-circle-icon.svg" alt="">
+                        <img width="24" height="24" src="./images/check-circle-icon.svg" alt="">
                         <div>
                             <h3>كفالة شفافة ومباشرة</h3>
                             <p>تابع تفاصيل كفالتك، تبرعاتك، وتحديثات اليتيم الذي تدعمه بكل وضوح.</p>
                         </div>
                     </li>
                     <li class="d-flex align-items-center gap-2">
-                        <img width="24" height="24" src="../images/check-circle-icon.svg" alt="">
+                        <img width="24" height="24" src="./images/check-circle-icon.svg" alt="">
                         <div>
                             <h3>تجربة استخدام بسيطة وسلسة</h3>
                             <p>واجهة سهلة الاستخدام تتيح لك التبرع أو الإهداء خلال ثوانٍ.</p>
                         </div>
                     </li>
                     <li class="d-flex align-items-center gap-2">
-                        <img width="24" height="24" src="../images/check-circle-icon.svg" alt="">
+                        <img width="24" height="24" src="./images/check-circle-icon.svg" alt="">
                         <div>
                             <h3>إهداء رقمي مؤثر باسم من تحب</h3>
                             <p> حوّل الكفالة إلى هدية قيّمة، تصل برسالة وشهادة رقمية مصممة باحتراف.</p>
                         </div>
                     </li>
                     <li class="d-flex align-items-center gap-2">
-                        <img width="24" height="24" src="../images/check-circle-icon.svg" alt="">
+                        <img width="24" height="24" src="./images/check-circle-icon.svg" alt="">
                         <div>
                             <h3>إشعارات ذكية وتحديثات فورية</h3>
                             <p> استلم إشعارات بمجرد إتمام كفالة أو تلقي رسالة من اليتيم.</p>
@@ -199,11 +174,12 @@
             <div class="text-center mb-5">
                 <h2 class="section-title">البركة... تطبيق موثوق يصنع الأثر</h2>
                 <p class="section-desc">في أقل من دقيقة، تعرف على بركة، التطبيق الذي يربط بين اليتيم والكافل بطريقة آمنة
-                    وشفافة، ويضمن وصول الدعم لمستحقيه بمنتهى الإنسانية والخصوصية</p>
+                    وشفافة، ويضمن وصول
+                    الدعم لمستحقيه بمنتهى الإنسانية والخصوصية</p>
             </div>
             <div class="text-center video">
                 <a data-fancybox="video" href="./videos/video-01.mp4">
-                    <img src="../images/story.png" alt="Video 1" />
+                    <img src="./images/landing-page/story.png" alt="Story Video" />
                 </a>
             </div>
         </div>
@@ -217,19 +193,20 @@
                 <div class="row">
                     <div class="col-12 col-md-8 d-flex flex-column gap-3">
                         <h2>حمّل التطبيق أينما كنت، على أي جهاز</h2>
-                        <p>تجربة موحّدة وسلسة على جميع أجهزتك لتبقى على اتصال دائم بخدماتنا في أي وقت ومن أي مكان.</p>
+                        <p>تجربة موحّدة وسلسة على جميع أجهزتك
+                            لتبقى على اتصال دائم بخدماتنا في أي وقت ومن أي مكان.</p>
                         <p>حمّل تطبيق البركة وكن جزءًا من قصة تغيير حياة :</p>
                         <div class="d-flex flex-column flex-md-row align-items-center gap-2 gap-md-4">
                             <a href="#!">
-                                <img src="../images/google-play-icon.svg" alt="">
+                                <img src="./images/google-play-icon.svg" alt="">
                             </a>
                             <a href="#!">
-                                <img src="../images/apple-icon.svg" alt="">
+                                <img src="./images/apple-icon.svg" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="download-img col-12 col-md-4 mt-5 mt-md-0"><img class="overflow-hidden"
-                            src="../images/download.png" alt="">
+                            src="./images/landing-page/download.png" alt="">
                     </div>
                 </div>
             </div>
@@ -354,7 +331,7 @@
             <div class="container wow animate__animated animate__fadeInUp">
                 <div class="row">
                     <div class="download-img col-12 col-md-4 mt-5 mt-md-0 order-2 order-md-1"><img
-                            class="overflow-hidden" src="../images/download.png" alt="">
+                            class="overflow-hidden" src="./images/landing-page/download.png" alt="">
                     </div>
                     <div class="col-12 col-md-8 order-1 order-md-2">
                         <h2 class="mb-5">سياسة الخصوصية لتطبيق "البركة"</h2>
@@ -380,12 +357,12 @@
                         <div class="form-floating mb-4">
                             <input type="text" class="form-control" id="name-input" placeholder="الاسم الكامل">
                             <label for="name-input">الاسم الكامل</label>
-                            <img class="input-icon" src="../images/user-icon.svg" alt="Usser Icon">
+                            <img class="input-icon" src="./images/user-icon.svg" alt="Usser Icon">
                         </div>
                         <div class="form-floating mb-4">
                             <input type="text" class="form-control" id="email-input" placeholder="example@gmail.com">
                             <label for="email-input">البريد الإلكتروني</label>
-                            <img class="input-icon" src="../images/mail-icon.svg" alt="Mail Icon">
+                            <img class="input-icon" src="./images/mail-icon.svg" alt="Mail Icon">
                         </div>
                         <div class="mb-4">
                             <textarea rows="5" class="form-control" placeholder="اكتب هنا محتوى الاستفسار">
@@ -410,11 +387,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <img class="mb-2" src="../images/logo-dark.svg" alt="logo-dark">
+                        <img class="mb-2" src="./images/logo-dark.svg" alt="logo-dark">
                         <p>تطبيق بركة هو الحل الذكي الذي يربط بين المتطوعين والمحتاجين في منصة واحدة سهلة
                             الاستخدام. من خلالgبركة، يمكنك المشاركة في الأعمال الخيرية بسهولة وشفافية، حيث يتيح لك
-                            التطبيق متابعة فرص التطوع، تقديم الدعم المباشر للمحتاجين، والتواصل مع جمعيات خيرية موثوقة.
-                        </p>
+                            التطبيق
+                            متابعة فرص التطوع،
+                            تقديم الدعم المباشر للمحتاجين، والتواصل مع جمعيات خيرية موثوقة. </p>
                     </div>
                     <div class="col-12 col-md-3">
                         <h4>روابط رئيسية</h4>
@@ -431,11 +409,11 @@
                         <h4>تواصل معنا</h4>
                         <ul class="contanct-us">
                             <li><a href="tel:+970123456789">
-                                    <img class="me-2" src="../images/phone-icon.svg" alt="Phone Icon">
+                                    <img class="me-2" src="./images/phone-icon.svg" alt="Phone Icon">
                                     <span>+970 123 456 789</span>
                                 </a></li>
                             <li><a href="mailto:support@barakaapp.com">
-                                    <img class="me-2" src="../images/gmail-icon.svg" alt="Gmail Icon">
+                                    <img class="me-2" src="./images/gmail-icon.svg" alt="Gmail Icon">
                                     <span>support@barakaapp.com</span>
                                 </a></li>
                         </ul>
@@ -446,11 +424,11 @@
         </div>
     </footer>
     <!-- End Footer Section -->
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/jquery.fancybox.min.js"></script>
-    <script src="../js/wow.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
