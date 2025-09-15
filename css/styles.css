@@ -127,14 +127,13 @@ ul {
   padding-right: 1rem;
 }
 .navbar .navbar-brand {
-  display: flex;
-  align-items: center;
+  display: inline-flex;
   width: 100px;
 }
 .navbar .navbar-brand img {
-  max-height: 100%;
-  width: auto;
-  display: block;
+  display: inline-flex;
+  max-width: 100%;
+  height: auto;
 }
 .navbar .navbar-nav .nav-link {
   font-size: 16px;
