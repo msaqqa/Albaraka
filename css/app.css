@@ -179,7 +179,7 @@ ul {
   font-size: 13px;
   padding: 8px;
   border-radius: 5px;
-  /* padding: 6px 10px 6px 30px; */
+  cursor: pointer;
 }
 .navbar .dropdown-menu {
   font-size: 13px;
@@ -192,7 +192,8 @@ ul {
   color: var(--bs-dropdown-link-hover-color) !important;
   background-color: var(--bs-dropdown-link-hover-bg) !important;
 }
-.navbar .dropdown-item:active {
+.navbar .dropdown-item:active,
+.navbar .dropdown-item.active {
   background-color: var(--main-color) !important;
   color: var(--white-color) !important;
 }

@@ -29,9 +29,25 @@ if (document.querySelector(".odometer")) {
 // ================= Swiper: Domains =================
 if (document.querySelector(".swiper-domains")) {
   new Swiper(".swiper-domains", {
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "custom",
+      renderCustom: function (swiper, current) {
+        return (
+          '<span class="total">' +
+          String(swiper.slides.length).padStart(2, "0") +
+          "</span>" +
+          " / " +
+          '<span class="current">' +
+          String(current).padStart(2, "0") +
+          "</span>"
+        );
+      },
     },
     breakpoints: {
       576: { slidesPerView: 1, spaceBetween: 10 },
@@ -119,6 +135,7 @@ if (document.querySelector(".campaigns-cover")) {
     window.addEventListener("resize", updateBeforeStyle);
   }
 }
+
 // ================= Share Button =================
 document.querySelectorAll(".share-content").forEach((shareContent) => {
   const shareBtn = shareContent.querySelector(".share-btn");
