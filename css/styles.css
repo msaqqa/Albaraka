@@ -118,7 +118,9 @@ ul {
   right: 0;
   z-index: 1030;
   padding-top: 0 !important;
+  padding-bottom: 0 !important;
   background-color: var(--white-color);
+  box-shadow: 0px 0.25px 0.75px rgba(0, 0, 0, 0.12);
 }
 .navbar .navbar-container {
   width: 100%;
@@ -128,12 +130,12 @@ ul {
 }
 .navbar .navbar-brand {
   display: inline-flex;
-  width: 100px;
+  height: 100px;
 }
 .navbar .navbar-brand img {
   display: inline-flex;
-  max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  width: auto;
 }
 .navbar .navbar-nav .nav-link {
   font-size: 16px;
@@ -189,9 +191,6 @@ ul {
   box-shadow: none;
 }
 @media (max-width: 991px) {
-  .navbar {
-    height: 70px;
-  }
   .navbar .offcanvas {
     border: 0;
     width: 100%;
@@ -363,8 +362,8 @@ ul {
 .inspiration .box-quotes {
   width: 50%;
   height: 329px;
-  margin-top: 78px;
-  margin-bottom: 78px;
+  margin-top: auto;
+  margin-bottom: auto;
   background-color: rgba(233, 245, 238, 0.64);
   backdrop-filter: blur(80px);
   padding: 32px;
@@ -409,6 +408,7 @@ ul {
 @media (max-width: 768px) {
   .inspiration .box-quotes {
     width: 100% !important;
+    height: 363px;
   }
 }
 /* End Inspiration */
@@ -494,7 +494,7 @@ ul {
 }
 @media (max-width: 768px) {
   .campaigns-cover::before {
-    display: none;
+    width: 100% !important;
   }
   .campaigns-img,
   .campaigns-content {
